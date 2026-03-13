@@ -13,7 +13,8 @@ function build_url(){
         var finalUrl = baseUrl + "api/?url=" + url;
         document.getElementById("b_url").innerHTML=`<a href=${finalUrl} target='_blank'>${finalUrl}</a>`;
         
-        // 生成二维码
+        // 显示容器并生成二维码
+        document.getElementById("qrcode_container").style.display = "flex";
         document.getElementById("qrcode").innerHTML="";
         new QRCode(document.getElementById("qrcode"), {
             text: finalUrl,
