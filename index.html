@@ -16,10 +16,12 @@
 			</header>
 
 		<!-- Signup Form -->
-			<form id="signup-form" method="post" style="display: flex; justify-content: center; max-width: 640px; margin: 0 auto;">
-				<input type="url" name="url" id="url" placeholder="需要跳转的网址" />
-				<input type="button" value="生成" onclick="build_url()"/>
-			</form>
+			<div style="display: flex; justify-content: center; width: 100%;">
+				<form id="signup-form" method="post" style="max-width: 640px; margin: 0;">
+					<input type="url" name="url" id="url" placeholder="需要跳转的网址" />
+					<input type="button" value="生成" onclick="build_url()"/>
+				</form>
+			</div>
 			<p id="b_url" style="text-align: center;"></p>
 			<div id="qrcode_container" style="display: none; justify-content: center; margin-top: 20px;">
 				<div id="qrcode" style="background: #fff; padding: 20px; border-radius: 5px;"></div>
