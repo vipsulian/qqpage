@@ -31,7 +31,7 @@
     } else {
     // 不是微信客户端，直接可以访问链接
     if (urlParmStr == url){
-        urlParmStr = "https://www.15815.vip";
+        document.getElementById("tips").innerHTML="参数错误";
     }
     console.log(urlParmStr);
     location.href=urlParmStr;
